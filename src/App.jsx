@@ -94,7 +94,6 @@ function App() {
           </p>
           <div className='dice-container'>{diceElements}</div>
           <button onClick={rollDice}>{tenzies ? 'New Game' : 'Roll'}</button>
-          {count}
         </div>
         {tenzies && (
           <div className='pop-up'>
