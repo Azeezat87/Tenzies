@@ -9,9 +9,9 @@ function Die(props) {
 
   return (
     <div className='dice-face' style={styles} onClick={props.holdDice}>
-      {[...Array(props.value)].map(() => (
+      {[...Array(props.value)].map((_, i) => (
         <span
-          className='pip'
+          className={'pip'}
           style={{
             height: '12px',
             width: '12px',
