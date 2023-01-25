@@ -59,6 +59,8 @@ main button:active{
   box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
 
+
+
 .dice-container{
   display: grid;
   grid-template: auto auto / repeat(5, 1fr);
@@ -134,5 +136,32 @@ font-size: 20px;
   align-items: center;
 }
 
+@media screen and (max-width: 676px){
+    main{
+      min-height: 500px;
+      width: 350px;
+      margin-top: 60px;
+      border-radius: 10px;
+      padding: 100px;
+    }
 
+  .dice-container{
+  display: grid;
+  grid-template: auto auto / repeat(4, 1fr);
+  grid-template-areas: 
+       "a b c d"
+       "e f g h"
+       ". i j .";
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+ .dice-face:nth-child(9){
+  grid-area: i;
+ }
+.dice-face:nth-child(10){
+  grid-area: j;
+ }
+}
 
